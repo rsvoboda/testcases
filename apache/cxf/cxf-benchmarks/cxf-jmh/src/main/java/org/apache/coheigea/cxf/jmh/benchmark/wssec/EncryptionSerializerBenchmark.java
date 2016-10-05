@@ -17,6 +17,7 @@
  * under the License.
  */
 package org.apache.coheigea.cxf.jmh.benchmark.wssec;
+/*
 
 import java.io.StringReader;
 import java.util.concurrent.TimeUnit;
@@ -48,12 +49,14 @@ import org.w3c.dom.Element;
 
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
+*/
 
 /**
  * Some benchmarking tests for different encryption serializers with WSS4J.
  */
+// TODO enable it someday, requires CXF 3.1.7+
 public class EncryptionSerializerBenchmark {
-    
+    /*
     private static Crypto serviceCrypto;
     
     static {
@@ -130,5 +133,5 @@ public class EncryptionSerializerBenchmark {
             results.getActionResults().get(WSConstants.ENCR).get(0);
         Assert.assertNotNull(actionResult.get(WSSecurityEngineResult.TAG_X509_CERTIFICATE));
         Assert.assertNotNull(actionResult.get(WSSecurityEngineResult.TAG_X509_REFERENCE_TYPE));
-    }
+    }*/
 }

@@ -64,7 +64,8 @@ public class EncryptionAlgorithmBenchmark {
     @Fork(1)
     @Warmup(iterations = 5)
     public void encryptionRSAOAEP() throws Exception {
-        doEncryption(WSConstants.KEYTRANSPORT_RSAOAEP, serviceCrypto);
+        doEncryption("http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p", serviceCrypto);
+        // because of https://github.com/apache/wss4j/commit/8d8248a934dbd748abf39c1cdc5bb0b3e15ced2c
     }
     
     @Benchmark
