@@ -156,6 +156,7 @@
                              <classpathScope>test</classpathScope>
                              <executable>java</executable>
                              <arguments>
+                                 <argument>-Djava.security.egd=file:/dev/./urandom</argument>
                                  <argument>-jar</argument>
                                  <argument>target/benchmarks.jar</argument>
                                  <argument>-rff</argument>
